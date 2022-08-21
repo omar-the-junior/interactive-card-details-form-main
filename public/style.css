@@ -1,0 +1,239 @@
+/* 
+## Colors
+
+### Primary
+
+- Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
+- Red (input errors): hsl(0, 100%, 66%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light grayish violet: hsl(270, 3%, 87%)
+- Dark grayish violet: hsl(279, 6%, 55%)
+- Very dark violet: hsl(278, 68%, 11%)
+
+
+*/
+/* todo don't forget to uncomment this font import line */
+/* @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"); */
+
+/*  font-family: 'Space Grotesk', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem; //18px font-size
+}
+
+.grid {
+  display: grid;
+}
+
+.main-container {
+  height: 100vh;
+  max-height: 100%;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.card-container {
+  position: relative;
+  background-image: url(./images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.card-container__card {
+  position: absolute;
+  height: 245px;
+  width: 447px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 3rem;
+}
+
+.card-container__card--front {
+  background-image: url(./images/bg-card-front.png);
+  top: 20rem;
+  right: -11rem;
+}
+
+.card-container__card--back {
+  background-image: url(./images/bg-card-back.png);
+  top: 48rem;
+  right: -22rem;
+}
+
+.card-container__user-name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card-container__card-number {
+  margin-top: 5rem;
+  font-size: 2.6rem;
+  letter-spacing: 5px;
+}
+
+.card-container__date {
+  letter-spacing: 2px;
+}
+
+.card-container__info-group {
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.card-container__cvc {
+  margin-top: 8rem;
+  margin-left: 32.8rem;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+}
+
+.form-container {
+  position: relative;
+  grid-template-columns: 220px 1fr;
+}
+
+.form-container__placeholder {
+  background-color: transparent;
+  width: 22rem;
+  height: 100%;
+}
+
+.form-container__content {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 40rem;
+  margin: 0 5rem;
+}
+
+.form__input {
+  font-size: 1.3rem;
+  color: hsl(278, 68%, 11%);
+  letter-spacing: 1.5px;
+}
+
+.form__error-container {
+  margin-top: 1rem;
+}
+.form__error {
+  font-size: 1.3rem;
+  color: hsl(0, 100%, 66%);
+}
+
+.form__input-group {
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.exp-date-input-group {
+  max-width: 28rem;
+}
+
+.form__input-field {
+  outline: unset;
+  border: solid 1px hsl(270, 3%, 87%);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(279, 6%, 55%);
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.form__input-field:focus {
+  border-color: hsl(278, 94%, 30%);
+}
+
+.form__input-field--error {
+  border-color: red;
+}
+.form__input-field-group {
+  gap: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: hsl(278, 68%, 11%);
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  padding: 1.5rem;
+}
+
+.btn--full-width {
+  width: 100%;
+}
+
+.form .btn {
+  margin-top: 4rem;
+}
+
+.form .form__input {
+  margin-top: 2.5rem;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.submission-result {
+  width: 40rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.submission-result__heading {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: hsl(278, 68%, 11%);
+  margin-top: 3rem;
+}
+
+.submission-result__paragraph {
+  color: hsl(279, 6%, 55%);
+  margin-top: 1rem;
+}
+
+.submission-result__btn {
+  margin-top: 5rem;
+}
