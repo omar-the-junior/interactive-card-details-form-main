@@ -53,6 +53,7 @@ body {
 }
 
 .card-container {
+  font-size: 10px;
   position: relative;
   background-image: url(./images/bg-main-desktop.png);
   background-repeat: no-repeat;
@@ -63,24 +64,46 @@ body {
 
 .card-container__card {
   position: absolute;
-  height: 245px;
-  width: 447px;
+  height: 24.5em;
+  width: 44.7em;
+  aspect-ratio: ;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  padding: 3rem;
+  padding: 3em;
 }
 
 .card-container__card--front {
   background-image: url(./images/bg-card-front.png);
-  top: 20rem;
-  right: -11rem;
+  top: 20em;
+  right: -11em;
+  z-index: 1;
 }
 
 .card-container__card--back {
   background-image: url(./images/bg-card-back.png);
-  top: 48rem;
-  right: -22rem;
+  top: 48em;
+  right: -22em;
+  z-index: 0;
+}
+
+@media screen and (max-height: 800px) {
+  .card-container__card--front {
+    top: 10rem;
+  }
+
+  .card-container__card--back {
+    top: 38rem;
+  }
+}
+@media screen and (max-height: 800px) {
+  .card-container__card--front {
+    top: 5rem;
+  }
+
+  .card-container__card--back {
+    top: 33rem;
+  }
 }
 
 .card-container__user-name {
@@ -89,8 +112,8 @@ body {
 }
 
 .card-container__card-number {
-  margin-top: 5rem;
-  font-size: 2.6rem;
+  margin-top: 5em;
+  font-size: 2.6em;
   letter-spacing: 5px;
 }
 
@@ -99,16 +122,16 @@ body {
 }
 
 .card-container__info-group {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 400;
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: 2.5em;
 }
 
 .card-container__cvc {
-  margin-top: 8rem;
-  margin-left: 32.8rem;
-  font-size: 1.5rem;
+  margin-top: 8em;
+  margin-left: 32.8em;
+  font-size: 1.5em;
   letter-spacing: 1.5px;
 }
 
@@ -132,6 +155,7 @@ body {
 
 .form {
   width: 40rem;
+  max-width: 100%;
   margin: 0 5rem;
 }
 
@@ -236,4 +260,53 @@ body {
 
 .submission-result__btn {
   margin-top: 5rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 1fr;
+  }
+
+  .card-container {
+    font-size: 8px;
+  }
+  .card-container__card {
+    font-size: inherit;
+  }
+
+  .form-container__placeholder {
+    display: none;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-container__card--front {
+    top: 5rem;
+    right: 1rem;
+  }
+
+  .card-container__card--back {
+    top: 5rem;
+    right: 2rem;
+  }
+
+  .card-container__card-number {
+    margin-top: 5em;
+    font-size: 2.6em;
+    letter-spacing: 5px;
+  }
+
+  .card-container__date {
+    letter-spacing: 2px;
+  }
+
+  .card-container__info-group {
+    font-size: 1.5em;
+    font-weight: 400;
+    width: 100%;
+    margin-top: 2.5em;
+  }
 }
