@@ -64,26 +64,26 @@ body {
 
 .card-container__card {
   position: absolute;
-  height: 24.5em;
-  width: 44.7em;
+  height: 24.5rem;
+  width: 44.7rem;
   aspect-ratio: ;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  padding: 3em;
+  padding: 3rem;
 }
 
 .card-container__card--front {
   background-image: url(./images/bg-card-front.png);
-  top: 20em;
-  right: -11em;
+  top: 20rem;
+  right: -11rem;
   z-index: 1;
 }
 
 .card-container__card--back {
   background-image: url(./images/bg-card-back.png);
-  top: 48em;
-  right: -22em;
+  top: 48rem;
+  right: -22rem;
   z-index: 0;
 }
 
@@ -112,8 +112,8 @@ body {
 }
 
 .card-container__card-number {
-  margin-top: 5em;
-  font-size: 2.6em;
+  margin-top: 5rem;
+  font-size: 2.6rem;
   letter-spacing: 5px;
 }
 
@@ -122,16 +122,16 @@ body {
 }
 
 .card-container__info-group {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 400;
   width: 100%;
-  margin-top: 2.5em;
+  margin-top: 2.5rem;
 }
 
 .card-container__cvc {
-  margin-top: 8em;
-  margin-left: 32.8em;
-  font-size: 1.5em;
+  margin-top: 8rem;
+  margin-left: 32.8rem;
+  font-size: 1.5rem;
   letter-spacing: 1.5px;
 }
 
@@ -294,8 +294,8 @@ body {
   }
 
   .card-container__card-number {
-    margin-top: 5em;
-    font-size: 2.6em;
+    margin-top: 5rem;
+    font-size: 2.6rem;
     letter-spacing: 5px;
   }
 
@@ -304,9 +304,9 @@ body {
   }
 
   .card-container__info-group {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 400;
     width: 100%;
-    margin-top: 2.5em;
+    margin-top: 2.5rem;
   }
 }
