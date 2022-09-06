@@ -360,8 +360,8 @@ body {
   }
 
   .card-container__card-number {
-    margin-top: 2rem;
-    font-size: 1.9rem;
+    margin-top: 4rem;
+    font-size: 1.7rem;
     letter-spacing: 5px;
   }
 
@@ -375,6 +375,6 @@ body {
   }
 
   .card-container__info-group {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 }
