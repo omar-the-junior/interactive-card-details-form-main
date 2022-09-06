@@ -56,8 +56,7 @@
               <div class="form__input-field-group flex exp-date-input-group">
 
                 <input v-maska="'##'" :class="{ 'form__input-field--error': v$.expirationDate.month.$error }"
-                  v-model="expirationDate.month" class="form__input-field" id="exp-date--month" type="month"
-                  placeholder="MM">
+                  v-model="expirationDate.month" class="form__input-field" id="exp-date--month" placeholder="MM">
                 <input v-maska="'##'" :class="{ 'form__input-field--error': v$.expirationDate.year.$error }"
                   v-model="expirationDate.year" class="form__input-field" id="exp-date--year" type="year"
                   placeholder="YY">
