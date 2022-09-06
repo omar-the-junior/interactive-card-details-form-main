@@ -4,7 +4,7 @@
 
       <div class="card-container__card card-container__card--front">
 
-        <img src="../public/images/card-logo.svg">
+        <img src="../public/images/card-logo.svg" class="card-container__logo">
         <p class="card-container__card-number">{{ this.cardNumber || '0000 0000 0000 0000' }}</p>
         <div class="flex card-container__info-group">
 
